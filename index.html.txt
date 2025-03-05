@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Towing Hub</title>
+    <title>Towing Hub - 24/7 Towing Services</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
         header { background: #333; color: white; padding: 15px; font-size: 24px; }
@@ -13,6 +13,7 @@
         .btn { background: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
         .contact-form { max-width: 400px; margin: auto; }
         footer { background: #333; color: white; padding: 15px; margin-top: 20px; }
+        .services-list { text-align: left; display: inline-block; }
     </style>
 </head>
 <body>
@@ -20,30 +21,59 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#services">Services</a>
+        <a href="#booking">Book a Service</a>
         <a href="#contact">Contact</a>
     </nav>
     
     <div class="container" id="home">
         <h2>Welcome to Towing Hub</h2>
         <p>Reliable and professional towing services available 24/7.</p>
-        <a href="#contact" class="btn">Get Help Now</a>
+        <a href="#booking" class="btn">Book a Service</a>
     </div>
     
     <div class="container" id="services">
         <h2>Our Services</h2>
-        <ul>
+        <ul class="services-list">
             <li>Emergency Towing</li>
             <li>Roadside Assistance</li>
             <li>Battery Jumpstart</li>
             <li>Flat Tire Replacement</li>
             <li>Lockout Services</li>
+            <li>Fuel Delivery</li>
+            <li>Accident Recovery</li>
         </ul>
+    </div>
+    
+    <div class="container" id="booking">
+        <h2>Book a Service</h2>
+        <form class="contact-form">
+            <label>Name:</label>
+            <input type="text" required><br><br>
+            <label>Phone:</label>
+            <input type="tel" required><br><br>
+            <label>Email:</label>
+            <input type="email" required><br><br>
+            <label>Service Required:</label>
+            <select required>
+                <option value="towing">Emergency Towing</option>
+                <option value="roadside">Roadside Assistance</option>
+                <option value="battery">Battery Jumpstart</option>
+                <option value="tire">Flat Tire Replacement</option>
+                <option value="lockout">Lockout Services</option>
+                <option value="fuel">Fuel Delivery</option>
+                <option value="recovery">Accident Recovery</option>
+            </select><br><br>
+            <label>Additional Details:</label><br>
+            <textarea rows="4" required></textarea><br><br>
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
     </div>
     
     <div class="container" id="contact">
         <h2>Contact Us</h2>
         <p>Call us now: <strong>+123 456 7890</strong></p>
         <p>Email: <strong>info@towinghub.com</strong></p>
+        <p>Address: 123 Towing St, Melbourne, VIC</p>
         <form class="contact-form">
             <label>Name:</label>
             <input type="text" required><br><br>
